@@ -1,3 +1,4 @@
+
 let g:go_fmt_command = "goimports"
 let g:go_snippet_case_type = "camelcase"
 let g:go_highlight_types = 1
@@ -8,7 +9,8 @@ let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_metalinter_autosave = 1
 let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 let g:neocomplete#enable_at_startup = 1
-set nocompatible              " required
+set nocompatible
+set backspace=2
 filetype on  " required
 "set encoding=utf-8
 set nu
