@@ -1,3 +1,13 @@
+let g:go_fmt_command = "goimports"
+let g:go_snippet_case_type = "camelcase"
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_metalinter_autosave = 1
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
+let g:neocomplete#enable_at_startup = 1
 set nocompatible              " required
 filetype on  " required
 "set encoding=utf-8
@@ -51,7 +61,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
-Bundle 'Valloric/YouCompleteMe'
+Bundle 'Shougo/neocomplete.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'nvie/vim-flake8'
 Plugin 'jnurmine/Zenburn'
@@ -59,6 +69,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
+Plugin 'fatih/vim-go'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 set clipboard=unnamed
